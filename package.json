@@ -1,0 +1,47 @@
+{
+  "name": "worldcup-2026-predictions",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "sync:fixtures": "tsx scripts/sync-fixtures.ts",
+    "sync:scores": "tsx scripts/sync-scores.ts",
+    "predict:regenerate": "tsx scripts/regenerate-predictions.ts",
+    "data:fetch": "tsx scripts/fetch-raw.ts",
+    "data:build": "tsx scripts/build-from-raw.ts"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "drizzle-orm": "^0.38.4",
+    "@neondatabase/serverless": "^0.10.4",
+    "postgres": "^3.4.5",
+    "zod": "^3.24.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.473.0",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.5.1",
+    "autoprefixer": "^10.4.20",
+    "drizzle-kit": "^0.30.2",
+    "tsx": "^4.19.2",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "15.1.6"
+  }
+}

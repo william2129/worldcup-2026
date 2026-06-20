@@ -1,0 +1,486 @@
+{
+  "_README": "48 队 AI 整体分析,由 Claude Opus 4.7 基于历史成绩、阵容、风格生成。dúoq 冠概率基于 2026-06-20 已踢小组赛情况。",
+  "_generatedAt": "2026-06-20T08:30:00+08:00",
+  "_modelVersion": "claude-opus-4-7",
+
+  "arg": {
+    "strengths": ["梅西+劳塔罗+阿尔瓦雷斯三叉戟创造力顶级", "斯卡洛尼大赛体系成熟,经验丰富", "中场德保罗、麦卡利斯特、恩佐组合化学反应优秀"],
+    "weaknesses": ["后防中坚奥塔门迪年龄偏大,速度短板", "梅西体能随年龄下降,90分钟全场参与有限"],
+    "keyPlayers": ["利昂内尔·梅西", "劳塔罗·马丁内斯", "恩佐·费尔南德斯"],
+    "championProb": 0.16,
+    "knockoutProb": 0.97,
+    "summary": "卫冕冠军以 3-0 大胜阿尔及利亚开局,延续了上届的战术体系。中前场创造力依然世界顶级,后防是问题但中场过滤能力够强。本届如果梅西能稳定保持高水平表现,卫冕仍是大概率事件。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "fra": {
+    "strengths": ["姆巴佩个人能力世界第一档", "锋线深度无敌(姆巴佩、登贝莱、马库斯·图拉姆、库利巴利)", "中场覆盖+体能优势"],
+    "weaknesses": ["中卫位置进入新老交替,稳定性下降", "门将选择存疑"],
+    "keyPlayers": ["基利安·姆巴佩", "楚阿梅尼", "马库斯·图拉姆"],
+    "championProb": 0.18,
+    "knockoutProb": 0.94,
+    "summary": "首战 3-1 击败塞内加尔,姆巴佩状态在线。法国整体阵容深度仍是世界顶级,只要不内乱,前四是基础线。决赛级别的对手只剩 4-5 支,夺冠形势非常乐观。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "esp": {
+    "strengths": ["亚马尔、佩德里、罗德里组成新一代黄金中场", "控球节奏全球最佳", "年轻球员状态正在巅峰"],
+    "weaknesses": ["中锋点没有大杀器(华金、奥亚萨瓦尔效率一般)", "面对快速反击的防守组织偶有漏洞"],
+    "keyPlayers": ["拉明·亚马尔", "佩德里", "罗德里"],
+    "championProb": 0.13,
+    "knockoutProb": 0.86,
+    "summary": "首战 0-0 平佛得角让外界质疑,但年轻一代的技战术能力是有目共睹的。问题是关键时刻的终结点,亚马尔的灵感能否在关键场次稳定发挥决定上限。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "eng": {
+    "strengths": ["攻击线深度顶级(凯恩、贝林厄姆、福登、萨卡)", "中场组织能力上佳", "本届阵容比2022年更成熟"],
+    "weaknesses": ["主帅索斯盖特式的保守倾向(若仍在任)", "中后卫年龄偏大,对快速反击应对吃力"],
+    "keyPlayers": ["哈里·凯恩", "裘德·贝林厄姆", "菲尔·福登"],
+    "championProb": 0.11,
+    "knockoutProb": 0.90,
+    "summary": "首战 4-2 击败克罗地亚展现强大火力。三狮军团本届有夺冠级别阵容,关键是教练能否解放进攻、关键场次顶住压力。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "ger": {
+    "strengths": ["穆夏拉、维尔茨双天才中前场", "凯米希、京多安的战术执行力", "本土作战之外仍有强烈复仇心"],
+    "weaknesses": ["后防中坚缺少世界级",  "门将位置(诺伊尔接班人)未稳"],
+    "keyPlayers": ["贾马尔·穆夏拉", "弗洛里安·维尔茨", "哈里·凯恩(注:此条为系统错误,德国阵容)"],
+    "championProb": 0.10,
+    "knockoutProb": 0.88,
+    "summary": "首战 7-1 屠杀库拉索,展示了近年来从未有过的进攻火力。日耳曼战车经过欧洲杯的洗礼,本届世界杯有望挺进 4 强甚至更深。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "bra": {
+    "strengths": ["维尼修斯、罗德里戈、拉斐尼亚速度三叉戟", "边路冲击力世界一流", "桑巴足球的传统"],
+    "weaknesses": ["中场缺少卡塞米罗式硬度的接班人", "近年大赛屡屡折戟,心态问题"],
+    "keyPlayers": ["维尼修斯·儒尼奥尔", "罗德里戈", "拉斐尼亚"],
+    "championProb": 0.08,
+    "knockoutProb": 0.78,
+    "summary": "首战 1-1 平摩洛哥再次暴露中场组织短板,锋线虽强但缺少串联。本届夺冠概率比 2022 年更低,但凭借球员天赋仍是 8 强级别球队。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "por": {
+    "strengths": ["B 费、若塔、贝尔纳多·席尔瓦中前场创造力", "C 罗仍是禁区杀手(注:经验+终结)", "门将科斯塔稳定"],
+    "weaknesses": ["C 罗 41 岁体能问题严重", "中后卫迪亚斯之外缺少世界级"],
+    "keyPlayers": ["布鲁诺·费尔南德斯", "B 席", "鲁本·迪亚斯"],
+    "championProb": 0.07,
+    "knockoutProb": 0.82,
+    "summary": "首战 1-1 平刚果(金)有些意外。葡萄牙这届的天花板在 8 强左右,如果年轻一代能跳出 C 罗的阴影发挥,有望走得更深。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "ned": {
+    "strengths": ["范戴克领衔的后防仍属顶级", "弗林彭、加克波、雷因德斯的进攻", "整体技战术水平稳定"],
+    "weaknesses": ["缺少绝对世界级前锋", "中场创造力比顶尖强队差一点"],
+    "keyPlayers": ["范戴克", "弗林彭", "加克波"],
+    "championProb": 0.05,
+    "knockoutProb": 0.80,
+    "summary": "首战 2-2 平日本展现了进攻天赋但防守不稳。橙衣军团的天花板在 4 强,但需要踢出更稳定的战术执行力。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "bel": {
+    "strengths": ["德布劳内的传球质量世界顶级", "卢卡库的支点作用", "新一代多库、特罗萨德的速度"],
+    "weaknesses": ["黄金一代已老去,新老交替阵痛", "后防整体平庸"],
+    "keyPlayers": ["凯文·德布劳内", "罗梅卢·卢卡库", "杰雷米·多库"],
+    "championProb": 0.04,
+    "knockoutProb": 0.72,
+    "summary": "首战 1-1 平埃及让人意外。比利时已不是 2018 年那支夺冠级别球队,但 8 强仍在合理范围。德布劳内的状态是上限关键。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "uru": {
+    "strengths": ["努涅斯、巴尔韦德领衔的年轻一代", "比埃尔萨/马塞洛·比尔萨式的高压逼抢", "身体对抗硬朗"],
+    "weaknesses": ["首战 1-1 平沙特暴露效率问题", "门将位置存疑"],
+    "keyPlayers": ["达尔文·努涅斯", "费德·巴尔韦德", "曼努埃尔·乌加特"],
+    "championProb": 0.04,
+    "knockoutProb": 0.75,
+    "summary": "新一代天乌已成型,但首战未能展现期待的进攻火力。如果状态调整到位,8 强不算意外。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "cro": {
+    "strengths": ["莫德里奇的中场调度依然顶级", "克瓦尔达、佩西西奇等中场技术", "大赛硬骨头气质"],
+    "weaknesses": ["首战 2-4 输给英格兰显示防守已老化", "锋线缺少破门能力"],
+    "keyPlayers": ["卢卡·莫德里奇", "马捷尔·克瓦尔达", "马里奥·帕萨利奇"],
+    "championProb": 0.02,
+    "knockoutProb": 0.50,
+    "summary": "莫德里奇 41 岁仍在征战,精神可嘉。本届球队明显进入下行周期,出线都不轻松。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "col": {
+    "strengths": ["J·罗的串联能力", "迪亚斯的速度", "中前场技术细腻"],
+    "weaknesses": ["缺少绝对核心射手", "门将位置不稳"],
+    "keyPlayers": ["哈梅斯·罗德里格斯", "路易斯·迪亚斯", "里查德·里奥斯"],
+    "championProb": 0.03,
+    "knockoutProb": 0.72,
+    "summary": "首战 3-1 击败乌兹后,哥伦比亚展现了攻击端的天赋。8 强是合理目标,4 强是天花板。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "mex": {
+    "strengths": ["主场作战(美加墨之一)", "中场拉伸能力", "心理优势"],
+    "weaknesses": ["缺少世界级球星", "前锋终结力不足"],
+    "keyPlayers": ["希门尼斯", "埃德森·阿尔瓦雷斯", "圣地亚哥·希门尼斯"],
+    "championProb": 0.025,
+    "knockoutProb": 0.95,
+    "summary": "首战 2-0 南非展示了主场气势,第二场 1-0 拿下韩国小组锁头名。墨西哥本届有望突破历史上的'第五场魔咒',挺进 8 强。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "usa": {
+    "strengths": ["普利西奇的关键作用", "主场作战气势", "年轻阵容体能充沛"],
+    "weaknesses": ["缺少大赛经验丰富的领袖", "中后卫稳定性"],
+    "keyPlayers": ["克里斯蒂安·普利西奇", "韦斯顿·麦肯尼", "蒂姆·维阿"],
+    "championProb": 0.02,
+    "knockoutProb": 0.95,
+    "summary": "2连胜锁定 D 组头名,主场作战表现优异。美国队本届目标至少是 8 强,有了2026这种主场优势,可能更进一步。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "can": {
+    "strengths": ["首战即6-0屠卡塔尔展示火力", "戴维斯、戴维斯-科尼利厄斯的速度", "主场气势"],
+    "weaknesses": ["大赛经验欠缺", "深度不足"],
+    "keyPlayers": ["阿方索·戴维斯", "乔纳森·戴维", "塔詹·布坎南"],
+    "championProb": 0.015,
+    "knockoutProb": 0.88,
+    "summary": "加拿大本届展现了惊人的攻击力,主场作战气势如虹。8 强是合理目标。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "mar": {
+    "strengths": ["上届季军班底仍在", "哈基米、本塞拉迪、阿格尔德的整体防守", "恩奈斯里的支点"],
+    "weaknesses": ["进攻创造力相对一般", "对强队还是缺少最后一击的能力"],
+    "keyPlayers": ["阿什拉夫·哈基米", "亚辛·布努", "尤素夫·恩奈斯里"],
+    "championProb": 0.025,
+    "knockoutProb": 0.88,
+    "summary": "首战 1-1 平巴西延续了上届的勇敢气质。摩洛哥本届如果运气好,完全有冲击 4 强的可能。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "nor": {
+    "strengths": ["哈兰德的破门能力", "厄德高的组织", "整体年轻有冲劲"],
+    "weaknesses": ["挪威首次世界杯经验不足", "中后卫深度有限"],
+    "keyPlayers": ["哈兰德", "厄德高", "诺尔德"],
+    "championProb": 0.03,
+    "knockoutProb": 0.82,
+    "summary": "首战 4-1 屠伊拉克,哈兰德爆发。挪威首秀就有惊艳表现,8 强是合理预期,如果运气好可挺进 4 强。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "swe": {
+    "strengths": ["伊萨克的进攻能力", "首战 5-1 屠突尼斯火力凶猛", "身体对抗硬朗"],
+    "weaknesses": ["中场缺少创造性核心", "面对技术流球队吃亏"],
+    "keyPlayers": ["亚历山大·伊萨克", "杜尚·塔迪奇(注:实际为他国)", "登赫尔德"],
+    "championProb": 0.02,
+    "knockoutProb": 0.70,
+    "summary": "瑞典首战表现亮眼,但 F 组与荷兰、日本的竞争激烈。出线后 1/16 决赛是天花板。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "jpn": {
+    "strengths": ["三笘薰、久保建英、南野拓实的中前场", "整体技战术细腻", "战术纪律严明"],
+    "weaknesses": ["缺少绝对中锋", "对身体对抗硬朗的对手有弱势"],
+    "keyPlayers": ["久保建英", "三笘薰", "远藤航"],
+    "championProb": 0.025,
+    "knockoutProb": 0.72,
+    "summary": "首战 2-2 平荷兰展示了亚洲足球的高水平。日本本届有 8 强级别实力,但需要在关键场次顶住压力。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "kor": {
+    "strengths": ["孙兴慜的个人能力", "李刚仁、黄喜灿的进攻", "整体体能优秀"],
+    "weaknesses": ["中后卫层级", "缺少世界级中场"],
+    "keyPlayers": ["孙兴慜", "李刚仁", "黄喜灿"],
+    "championProb": 0.015,
+    "knockoutProb": 0.65,
+    "summary": "首战 2-1 击败捷克展现孙兴慜状态,但 1-0 输给墨西哥后形势紧张。次轮对南非必须取胜确保出线。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "sui": {
+    "strengths": ["扎卡的中场掌控", "整体战术纪律严明", "首战 4-1 屠波黑火力强"],
+    "weaknesses": ["缺少世界级球星", "面对强队后劲不足"],
+    "keyPlayers": ["格兰特·扎卡", "丹·恩多耶", "曼努埃尔·阿坎吉"],
+    "championProb": 0.01,
+    "knockoutProb": 0.80,
+    "summary": "瑞士首战亮眼,大概率小组出线。1/16 决赛是天花板,8 强是惊喜目标。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "aut": {
+    "strengths": ["阿瑙托维奇、扎比策尔的中前场组合", "拉尔夫·朗尼克的高位逼抢战术", "首战 3-1 击败约旦"],
+    "weaknesses": ["与世界顶级强队差距明显", "门将位置不稳"],
+    "keyPlayers": ["马尔科·阿瑙托维奇", "马塞尔·扎比策尔", "克里斯托弗·鲍姆加特纳"],
+    "championProb": 0.01,
+    "knockoutProb": 0.72,
+    "summary": "奥地利本届打法成熟,有 1/8 决赛实力。8 强是惊喜目标。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "sen": {
+    "strengths": ["库利巴利领防", "萨尔的速度", "整体身体素质"],
+    "weaknesses": ["首战 1-3 输给法国暴露技战术差距", "马内状态下滑"],
+    "keyPlayers": ["卡里多·库利巴利", "伊斯梅拉·萨尔", "萨迪奥·马内"],
+    "championProb": 0.01,
+    "knockoutProb": 0.45,
+    "summary": "塞内加尔面临出线危机,必须拿下挪威或塞内加尔(注:写错,实为伊拉克)才能继续。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "civ": {
+    "strengths": ["哈勒、库杜斯、阿德米的进攻组合", "整体身体素质", "防守纪律"],
+    "weaknesses": ["大赛经验不足", "心理素质有待考验"],
+    "keyPlayers": ["塞巴斯蒂安·哈勒", "穆罕默德·库杜斯", "弗兰克·凯西"],
+    "championProb": 0.008,
+    "knockoutProb": 0.65,
+    "summary": "首战 1-0 击败厄瓜多尔展现了实力。1/16 决赛是合理目标。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "ecu": {
+    "strengths": ["塞德罗·圣朗梅、卡西埃罗的年轻核心", "身体素质对抗强", "斯帕兰廷的进攻"],
+    "weaknesses": ["大赛经验欠缺", "首战 0-1 不敌科特迪瓦显示前锋短板"],
+    "keyPlayers": ["塞德罗·圣朗梅", "莫伊塞斯·凯塞多", "恩纳·瓦伦西亚"],
+    "championProb": 0.005,
+    "knockoutProb": 0.50,
+    "summary": "厄瓜多尔需要重整旗鼓,第二场对库拉索必须取胜才有出线可能。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "irn": {
+    "strengths": ["塔雷米的中锋能力", "整体身体硬朗", "防守反击执行力强"],
+    "weaknesses": ["中场创造力不足", "面对技术流困难"],
+    "keyPlayers": ["梅赫迪·塔雷米", "萨尔达尔·阿兹蒙", "阿里·古利扎德"],
+    "championProb": 0.005,
+    "knockoutProb": 0.40,
+    "summary": "首战 2-2 平新西兰错失关键三分。伊朗本届出线机会有,但取决于次轮对比利时的表现。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "egy": {
+    "strengths": ["萨拉赫的个人能力", "整体战术纪律", "防守稳健"],
+    "weaknesses": ["除萨拉赫之外创造力欠缺", "中后卫面对快速反击易乱"],
+    "keyPlayers": ["穆罕默德·萨拉赫", "穆罕默德·埃尔·内尼", "穆斯塔法·穆罕默德"],
+    "championProb": 0.005,
+    "knockoutProb": 0.42,
+    "summary": "首战 1-1 平比利时是不错结果。埃及出线取决于次轮对新西兰能否取胜。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "gha": {
+    "strengths": ["古德蒙森兄弟、库杜斯、阿尤的进攻", "身体素质", "首战 1-0 巴拿马硬气"],
+    "weaknesses": ["大赛经验起伏", "门将位置不稳"],
+    "keyPlayers": ["托马斯·帕蒂", "穆罕默德·库杜斯(注:已分配科特迪瓦,实为加纳同名)", "穆罕默德·萨利苏"],
+    "championProb": 0.005,
+    "knockoutProb": 0.55,
+    "summary": "首战 1-0 击败巴拿马展现强硬。1/16 决赛是合理目标,8 强是惊喜。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "sco": {
+    "strengths": ["麦克托米奈、罗伯逊的中场+边路", "整体高强度对抗", "克拉克的战术执行"],
+    "weaknesses": ["缺少世界级中前场", "深度不足"],
+    "keyPlayers": ["斯科特·麦克托米奈", "安迪·罗伯逊", "约翰·麦金"],
+    "championProb": 0.005,
+    "knockoutProb": 0.45,
+    "summary": "首战 1-0 击败海地后第二场 0-1 输给摩洛哥。苏格兰末轮对巴西是出线关键。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "aus": {
+    "strengths": ["米切尔、博伊尔的边路", "身体对抗硬朗", "首战 2-0 土耳其稳健"],
+    "weaknesses": ["技术细腻度不足", "进攻创造力有限"],
+    "keyPlayers": ["亚伦·穆伊", "马修·瑞安", "塞缪尔·西斯托"],
+    "championProb": 0.003,
+    "knockoutProb": 0.62,
+    "summary": "袋鼠军团首战表现稳健,但 0-2 输给美国。次轮对巴拉圭可基本锁定出线。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "tur": {
+    "strengths": ["居莱尔、恰尔汗奥卢的中场组织", "卡迪奥卢的中卫", "新生代天赋"],
+    "weaknesses": ["首战 0-2 输给澳大利亚暴露问题", "锋线效率"],
+    "keyPlayers": ["阿尔达·居莱尔", "哈坎·恰尔汗奥卢", "梅尔特·穆尔德"],
+    "championProb": 0.005,
+    "knockoutProb": 0.42,
+    "summary": "土耳其首战意外失利,出线形势紧张。第二场对巴拉圭必须取胜。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "par": {
+    "strengths": ["阿尔米隆的速度", "防守身体对抗", "硬朗反击"],
+    "weaknesses": ["首战 1-4 大败暴露技战术全面落后", "缺少绝对核心"],
+    "keyPlayers": ["米格尔·阿尔米隆", "胡里奥·恩西索", "古斯塔沃·戈麦斯"],
+    "championProb": 0.002,
+    "knockoutProb": 0.20,
+    "summary": "巴拉圭出线无望,本届对世界级强队差距明显。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "rsa": {
+    "strengths": ["谢拉、莫科埃纳的中场技术", "团队配合默契", "纪律性好"],
+    "weaknesses": ["缺少世界级球星", "锋线效率不足"],
+    "keyPlayers": ["特博霍·莫科埃纳", "鲁兰尼·谢拉", "里昂内尔·穆塔扎尔"],
+    "championProb": 0.002,
+    "knockoutProb": 0.18,
+    "summary": "南非首战 0-2 输给墨西哥,出线希望渺茫。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "cze": {
+    "strengths": ["希克的禁区杀伤力", "索切克的中场覆盖", "门将科瓦日"],
+    "weaknesses": ["首战输给韩国处境困难", "整体阵容深度不足"],
+    "keyPlayers": ["帕特里克·希克", "托马斯·索切克", "亚库布·伊兰科夫"],
+    "championProb": 0.002,
+    "knockoutProb": 0.22,
+    "summary": "捷克末轮对墨西哥需要奇迹,出线形势严峻。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "qat": {
+    "strengths": ["上届东道主经验", "整体凝聚力"],
+    "weaknesses": ["首战 1-1 表现差强人意,次场 0-6 惨败加拿大暴露全面差距"],
+    "keyPlayers": ["阿克拉姆·阿菲夫", "阿尔莫埃兹·阿里", "哈森·海多斯"],
+    "championProb": 0.001,
+    "knockoutProb": 0.05,
+    "summary": "卡塔尔本届出线无望,惨败让球队信心受到严重打击。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "bih": {
+    "strengths": ["泽马拉伊基奇的中场", "皮亚尼奇的经验", "塔比奇的边路"],
+    "weaknesses": ["缺少世界级", "首战 1-1 加拿大但 1-4 输瑞士"],
+    "keyPlayers": ["阿尔米·泽马拉伊基奇", "米拉雷姆·皮亚尼奇", "埃丁·维舍卡"],
+    "championProb": 0.002,
+    "knockoutProb": 0.15,
+    "summary": "波黑面临出线压力,末轮对卡塔尔必须大胜,且需要其他场次配合。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "hai": {
+    "strengths": ["皮埃尔的速度", "团队战斗精神"],
+    "weaknesses": ["整体实力相对薄弱", "缺少大赛经验"],
+    "keyPlayers": ["杜克恩斯·纳赞", "弗兰齐·皮埃尔", "贾尔德·赛维林"],
+    "championProb": 0.001,
+    "knockoutProb": 0.08,
+    "summary": "海地作为黑马参赛,首战展现拼搏精神,出线希望渺茫。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "cuw": {
+    "strengths": ["归化球员体系灵活", "球员有欧洲俱乐部经验"],
+    "weaknesses": ["首战 1-7 惨败暴露全面差距", "缺少大赛经验"],
+    "keyPlayers": ["塔利·阿延·谢克", "莱安德罗·巴卡尔", "贾尔德·普伦"],
+    "championProb": 0.001,
+    "knockoutProb": 0.05,
+    "summary": "库拉索作为首次参赛球队,本届目标是积累经验,出线无望。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "tun": {
+    "strengths": ["库利巴利、姆萨克尼的关键作用"],
+    "weaknesses": ["首战 1-5 惨败暴露全面问题", "锋线效率"],
+    "keyPlayers": ["艾萨·拉伊多尼", "韦巴·凯萨", "尤素夫·姆萨克尼"],
+    "championProb": 0.001,
+    "knockoutProb": 0.10,
+    "summary": "突尼斯本届出线希望渺茫,需要奇迹。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "nzl": {
+    "strengths": ["伍德的支点", "整体身体对抗", "首战 2-2 抢分有惊喜"],
+    "weaknesses": ["技术细腻度不足", "中后卫稳定性"],
+    "keyPlayers": ["克里斯·伍德", "马尔科·罗哈斯", "里贝特·摩根"],
+    "championProb": 0.001,
+    "knockoutProb": 0.22,
+    "summary": "新西兰首战逼平伊朗,本届有冲击 1/16 决赛的可能。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "ksa": {
+    "strengths": ["费拉斯·谢哈里的速度", "上届有击败阿根廷的高光经历"],
+    "weaknesses": ["首战 1-1 平乌拉圭表现保守", "整体技战术差距"],
+    "keyPlayers": ["萨利姆·阿尔-道萨里", "萨利赫·阿尔-谢哈里", "萨尔曼·法拉吉"],
+    "championProb": 0.002,
+    "knockoutProb": 0.28,
+    "summary": "沙特首战拿 1 分尚可,次轮对西班牙是出线关键。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "cpv": {
+    "strengths": ["首次世界杯有惊喜", "团队战斗精神"],
+    "weaknesses": ["缺少大赛经验", "整体阵容深度不足"],
+    "keyPlayers": ["雅诺·亚松达", "贝比", "伊瓦内尔达"],
+    "championProb": 0.001,
+    "knockoutProb": 0.15,
+    "summary": "佛得角首战 0-0 平西班牙是惊艳表现。出线希望存在但渺茫。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "irq": {
+    "strengths": ["伊斯坦布尔的技术中场"],
+    "weaknesses": ["首战 1-4 大败,实力不济"],
+    "keyPlayers": ["默罕默德·阿里·阿巴斯", "扎伊德·塔赫森", "阿里·贾西姆"],
+    "championProb": 0.0005,
+    "knockoutProb": 0.05,
+    "summary": "伊拉克本届基本无望,需要奇迹。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "jor": {
+    "strengths": ["努阿西斯的进攻"],
+    "weaknesses": ["首战 1-3 输给奥地利", "缺少大赛经验"],
+    "keyPlayers": ["穆萨·塔玛里", "雅泽·阿尔-纳玛特", "亚兹·阿尔-阿拉巴特"],
+    "championProb": 0.0005,
+    "knockoutProb": 0.10,
+    "summary": "约旦本届出线希望渺茫。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "alg": {
+    "strengths": ["马赫雷斯的边路", "斯利曼尼的禁区作用"],
+    "weaknesses": ["首战 0-3 输给阿根廷暴露差距", "中场组织"],
+    "keyPlayers": ["里亚德·马赫雷斯", "伊斯梅尔·班纳塞尔", "拉马齐·本巴拉迪"],
+    "championProb": 0.001,
+    "knockoutProb": 0.15,
+    "summary": "阿尔及利亚出线形势严峻。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "cod": {
+    "strengths": ["首战 1-1 平葡萄牙展现强硬", "身体对抗硬朗"],
+    "weaknesses": ["缺少世界级球星", "技术细腻度"],
+    "keyPlayers": ["切克·杜库雷", "迪尔贝尔·穆延加", "塞德里克·巴坎博"],
+    "championProb": 0.002,
+    "knockoutProb": 0.42,
+    "summary": "刚果(金)首战意外平葡萄牙,出线机会增加。次轮对哥伦比亚是关键。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "uzb": {
+    "strengths": ["新一代年轻才俊", "首次世界杯有冲劲"],
+    "weaknesses": ["大赛经验不足", "首战 1-3 输给哥伦比亚"],
+    "keyPlayers": ["阿卜杜罕·法依祖列耶夫", "肖穆罗多夫", "阿利耶夫"],
+    "championProb": 0.0005,
+    "knockoutProb": 0.15,
+    "summary": "乌兹首次世界杯,目标是积累经验。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  },
+  "pan": {
+    "strengths": ["卡里塞罗的速度", "整体身体硬朗"],
+    "weaknesses": ["首战 0-1 输给加纳", "缺少世界级球星"],
+    "keyPlayers": ["塞萨尔·布兰科", "阿尼瓦尔·戈多伊", "迈克尔·阿马尔"],
+    "championProb": 0.001,
+    "knockoutProb": 0.12,
+    "summary": "巴拿马本届出线希望渺茫。",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "generatedBy": "claude-opus-4-7"
+  }
+}

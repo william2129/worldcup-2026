@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    background-color: #06090a;
+    color: #e5e7eb;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 简单的滚动条美化 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1c2428;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a343a;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl bg-pitch-card border border-pitch-line shadow-card;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium;
+  }
+  .chip-live {
+    @apply chip bg-accent-red/15 text-accent-red;
+  }
+  .chip-live::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: currentColor;
+    border-radius: 9999px;
+    animation: pulse-live 1.6s ease-in-out infinite;
+  }
+  .chip-upcoming {
+    @apply chip bg-accent-blue/10 text-accent-blue;
+  }
+  .chip-finished {
+    @apply chip bg-pitch-line text-pitch-muted;
+  }
+  .score-num {
+    @apply font-display tabular-nums tracking-tight;
+  }
+}
