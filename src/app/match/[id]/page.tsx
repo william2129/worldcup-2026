@@ -6,13 +6,19 @@ import { zhCN } from 'date-fns/locale';
 import { Flag } from '@/components/flag';
 import { ProbabilityBar } from '@/components/probability-bar';
 import { RichBlocks } from '@/components/rich-blocks';
-import { getFixtureById, getMatchesByTeam } from '@/lib/data';
+import { getAllFixtures, getFixtureById, getMatchesByTeam } from '@/lib/data';
 import { STAGE_LABEL } from '@/lib/team-i18n';
 import { cn } from '@/lib/utils';
 import type { MatchWithTeams } from '@/lib/types';
 
 interface PageProps {
   params: Promise<{ id: string }>;
+}
+
+// 静态导出:列出所有有效的比赛 ID,在 build 时生成静态 HTML
+export async function generateStaticParams() {
+  const fixtures = await getAllFixtures();
+  return fixtures.map((m) => ({ id: m.id }));
 }
 
 export default async function MatchDetailPage({ params }: PageProps) {

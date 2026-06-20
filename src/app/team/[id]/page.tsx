@@ -5,11 +5,17 @@ import { Flag } from '@/components/flag';
 import { MatchCard } from '@/components/match-card';
 import { SectionHeader } from '@/components/section-header';
 import { RichBlocks } from '@/components/rich-blocks';
-import { getMatchesByTeam, getTeamAnalysis, getTeamById } from '@/lib/data';
+import { getMatchesByTeam, getTeamAnalysis, getTeamById, getTeams } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
 interface PageProps {
   params: Promise<{ id: string }>;
+}
+
+// 静态导出:列出 48 个球队 ID,build 时生成静态 HTML
+export async function generateStaticParams() {
+  const teams = await getTeams();
+  return teams.map((t) => ({ id: t.id }));
 }
 
 export default async function TeamDetailPage({ params }: PageProps) {
