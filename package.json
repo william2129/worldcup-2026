@@ -16,7 +16,7 @@
     "data:build": "tsx scripts/build-from-raw.ts"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "15.5.19",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "drizzle-orm": "^0.38.4",
@@ -42,6 +42,6 @@
     "tsx": "^4.19.2",
     "dotenv": "^16.4.7",
     "eslint": "^9.18.0",
-    "eslint-config-next": "15.1.6"
+    "eslint-config-next": "15.5.19"
   }
 }
