@@ -1,0 +1,7 @@
+// 告诉 Cloudflare 这是一个纯静态站点,不要用 OpenNext 把它编成 Worker
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "worldcup-2026",
+  "compatibility_date": "2025-01-01",
+  "pages_build_output_dir": "./out"
+}
