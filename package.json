@@ -13,7 +13,8 @@
     "sync:scores": "tsx scripts/sync-scores.ts",
     "predict:regenerate": "tsx scripts/regenerate-predictions.ts",
     "data:fetch": "tsx scripts/fetch-raw.ts",
-    "data:build": "tsx scripts/build-from-raw.ts"
+    "data:build": "tsx scripts/build-from-raw.ts",
+    "odds:fetch": "tsx scripts/fetch-market-odds.ts"
   },
   "dependencies": {
     "next": "15.5.19",

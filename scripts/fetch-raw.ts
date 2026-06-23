@@ -1,5 +1,7 @@
 // 拉取 football-data.org 原始数据保存到 data/raw/
-import 'dotenv/config';
+import { config } from 'dotenv';
+config({ path: '.env.local' });
+config(); // 兜底 .env
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 

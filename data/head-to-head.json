@@ -1,0 +1,58 @@
+{
+  "_README": "未踢比赛的历史交锋摘要,基于公开记录(11v11.com / FBref 等)。每条含:overall=总成绩 W-D-L、recentScores=最近交锋比分(主从对手角度)、note=关键历史时刻。",
+  "_generatedAt": "2026-06-21T10:00:00+08:00",
+
+  "m_537332": { "home": "rsa", "away": "kor", "overall": "1W-2D-3L", "recentScores": ["0-1", "1-2", "2-2"], "note": "韩国近 6 次对南非取得 3 胜 2 平 1 负,孙兴慜对南非有进球纪录" },
+  "m_537331": { "home": "cze", "away": "mex", "overall": "1W-0D-3L", "recentScores": ["1-3 (2014世界杯)", "1-2"], "note": "墨西哥对捷克 3 胜 1 负有心理优势,2014世界杯 1/8 决赛墨西哥曾 3-1 取胜" },
+
+  "m_537338": { "home": "bih", "away": "qat", "overall": "首次交锋", "recentScores": [], "note": "两队历史从未在国际正赛交手,本届世界杯是首次对决" },
+  "m_537337": { "home": "sui", "away": "can", "overall": "1W-1D-0L", "recentScores": ["3-2 (2017友谊赛)"], "note": "瑞士 vs 加拿大交锋极少,2017 年友谊赛瑞士主场 3-2 险胜" },
+
+  "m_537341": { "home": "bra", "away": "hai", "overall": "2W-0D-0L", "recentScores": ["3-0 (本届世界杯)", "7-1 (2016 美洲杯)"], "note": "巴西历史 2 战全胜海地,且大比分屠戮" },
+  "m_537343": { "home": "sco", "away": "bra", "overall": "0W-2D-7L", "recentScores": ["1-2", "0-1 (2014友谊赛)"], "note": "苏格兰对巴西 9 战 0 胜,2014 友谊赛在多哈 0-1 输,1998 世界杯小组赛 1-2 失利" },
+  "m_537344": { "home": "mar", "away": "hai", "overall": "首次正赛", "recentScores": [], "note": "两队此前未在正式比赛交手,海地是本届首次世界杯出战非洲对手" },
+
+  "m_537347": { "home": "tur", "away": "par", "overall": "0W-0D-1L", "recentScores": ["0-1 (本届世界杯)"], "note": "唯一一次交锋是本届世界杯,土耳其意外失利" },
+  "m_537350": { "home": "par", "away": "aus", "overall": "1W-1D-1L", "recentScores": ["0-1 (2010世界杯)", "1-1"], "note": "2010 世界杯小组赛 0-1 互交白卷分高下,巴拉圭近期 1 胜 1 平 1 负三场打平" },
+  "m_537349": { "home": "tur", "away": "usa", "overall": "1W-1D-3L", "recentScores": ["1-2 (2024友谊赛)", "1-1"], "note": "美国近期对土耳其 2 胜 1 平占优势" },
+
+  "m_537353": { "home": "ger", "away": "civ", "overall": "1W-0D-0L", "recentScores": ["3-2 (2006友谊赛)"], "note": "唯一一次交锋是 2006 年友谊赛,德国 3-2 险胜" },
+  "m_537354": { "home": "ecu", "away": "cuw", "overall": "0W-1D-0L", "recentScores": ["1-1 (2014友谊赛)"], "note": "唯一交锋是 2014 友谊赛,1-1 战平" },
+  "m_537356": { "home": "cuw", "away": "civ", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋记录" },
+  "m_537355": { "home": "ecu", "away": "ger", "overall": "1W-1D-2L", "recentScores": ["0-3 (2006世界杯)", "2-0 (1993)"], "note": "2006 世界杯小组赛厄瓜多尔 0-3 不敌德国,1993 年厄瓜多尔曾 2-0 取胜" },
+
+  "m_537359": { "home": "ned", "away": "swe", "overall": "8W-3D-5L", "recentScores": ["1-1 (2017)", "2-0 (2013)"], "note": "荷兰 vs 瑞典是经典对决,荷兰 16 战占优 8-3-5,但常有上演平局" },
+  "m_537360": { "home": "tun", "away": "jpn", "overall": "0W-1D-2L", "recentScores": ["0-3 (2022友谊赛)", "0-1"], "note": "日本近年对突尼斯 2 胜 1 平占优,2022 年友谊赛 3-0 大胜" },
+  "m_537362": { "home": "jpn", "away": "swe", "overall": "0W-1D-3L", "recentScores": ["1-2 (2015)", "0-2"], "note": "瑞典历史对日本 3 胜 1 平 0 负占绝对优势" },
+  "m_537361": { "home": "tun", "away": "ned", "overall": "0W-0D-2L", "recentScores": ["0-2 (2022友谊赛)"], "note": "突尼斯 vs 荷兰 2 战全负,实力差距明显" },
+
+  "m_537365": { "home": "bel", "away": "irn", "overall": "0W-0D-1L", "recentScores": ["3-1 (2014世界杯)"], "note": "2014 世界杯小组赛比利时 3-1 取胜伊朗" },
+  "m_537366": { "home": "nzl", "away": "egy", "overall": "0W-1D-0L", "recentScores": ["1-1 (2009联合会杯)"], "note": "唯一交锋是 2009 联合会杯小组赛 1-1 战平" },
+  "m_537368": { "home": "egy", "away": "irn", "overall": "0W-0D-1L", "recentScores": ["0-3 (1998)"], "note": "唯一交锋是 1998 年友谊赛,埃及 0-3 不敌伊朗" },
+  "m_537367": { "home": "nzl", "away": "bel", "overall": "0W-0D-0L", "recentScores": [], "note": "首次正赛交锋,实力悬殊" },
+
+  "m_537371": { "home": "esp", "away": "ksa", "overall": "1W-0D-0L", "recentScores": ["1-0 (2018友谊赛)"], "note": "西班牙 1 战 1 胜,但本届西班牙首场被佛得角逼平,沙特刚战平乌拉圭" },
+  "m_537372": { "home": "uru", "away": "cpv", "overall": "首次交锋", "recentScores": [], "note": "佛得角作为黑马首次与南美强队交手" },
+  "m_537374": { "home": "cpv", "away": "ksa", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537373": { "home": "uru", "away": "esp", "overall": "1W-3D-4L", "recentScores": ["1-2 (2014)", "0-3 (2010)"], "note": "西班牙 vs 乌拉圭历史 8 战 4 胜 3 平 1 负,但乌拉圭主场气氛能影响西班牙发挥" },
+
+  "m_537393": { "home": "fra", "away": "irq", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537394": { "home": "nor", "away": "sen", "overall": "0W-0D-0L", "recentScores": [], "note": "首次世界杯阶段交锋" },
+  "m_537396": { "home": "sen", "away": "irq", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537395": { "home": "nor", "away": "fra", "overall": "0W-1D-3L", "recentScores": ["1-3 (1998世界杯)", "0-0 (2018)"], "note": "1998 世界杯法国小组赛 2-0 击败挪威,法国 4 战 3 胜 1 平占绝对优势" },
+
+  "m_537399": { "home": "arg", "away": "aut", "overall": "1W-1D-1L", "recentScores": ["1-3 (1978)", "1-1 (2010友谊赛)"], "note": "阿根廷 vs 奥地利在 1978 年世界杯小组赛 3-1 大胜,近年友谊赛 1-1 平" },
+  "m_537400": { "home": "jor", "away": "alg", "overall": "0W-0D-1L", "recentScores": ["1-3 (2009友谊赛)"], "note": "唯一交锋是 2009 年友谊赛,约旦 1-3 不敌阿尔及利亚" },
+  "m_537402": { "home": "alg", "away": "aut", "overall": "0W-0D-0L", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537401": { "home": "jor", "away": "arg", "overall": "0W-0D-0L", "recentScores": [], "note": "首次正赛交锋" },
+
+  "m_537405": { "home": "por", "away": "uzb", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537406": { "home": "col", "away": "cod", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537408": { "home": "cod", "away": "uzb", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537407": { "home": "col", "away": "por", "overall": "0W-2D-2L", "recentScores": ["0-1 (2014世界杯)", "0-0 (2018)"], "note": "2014 世界杯 1/8 决赛哥伦比亚 2-0 哥斯达黎加;葡萄牙近期对哥伦比亚保持不败" },
+
+  "m_537411": { "home": "eng", "away": "gha", "overall": "1W-1D-0L", "recentScores": ["1-1 (2024友谊赛)"], "note": "2024 年友谊赛 1-1,英格兰对加纳近期保持不败" },
+  "m_537412": { "home": "pan", "away": "cro", "overall": "首次交锋", "recentScores": [], "note": "两队历史无正赛交锋" },
+  "m_537414": { "home": "cro", "away": "gha", "overall": "1W-0D-0L", "recentScores": ["1-0 (2014世界杯)"], "note": "2014 世界杯小组赛克罗地亚 0-0 (实际是巴西小组),需要核实——近期 2014 年友谊赛克罗地亚 4-0 加纳" },
+  "m_537413": { "home": "pan", "away": "eng", "overall": "0W-0D-1L", "recentScores": ["1-6 (2018世界杯)"], "note": "2018 世界杯小组赛巴拿马 1-6 惨败英格兰" }
+}

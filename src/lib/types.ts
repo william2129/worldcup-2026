@@ -91,9 +91,59 @@ export interface GroupStanding {
   qualifyProb: number;   // 出线概率 0-1
 }
 
+// H2H 历史交锋
+export interface HeadToHead {
+  overall: string;          // 如 "5W-2D-3L"(从主队角度)
+  recentScores: string[];   // 最近几次比分(字符串描述)
+  note: string;
+}
+
+// 统计预测(Elo + Poisson 蒙特卡洛 / Dixon-Coles)
+export interface StatisticalPrediction {
+  homeWinProb: number;
+  drawProb: number;
+  awayWinProb: number;
+  expectedHomeGoals: number;
+  expectedAwayGoals: number;
+  topScores: { home: number; away: number; prob: number }[];
+  mostLikelyHome: number;
+  mostLikelyAway: number;
+  simulations: number;
+}
+
+// 市场共识(多家博彩公司隐含概率平均)
+export interface MarketConsensus {
+  homeWinProb: number;
+  drawProb: number;
+  awayWinProb: number;
+  bookmakerCount: number;
+  bookmakers: string[];
+  fetchedAt: string;
+}
+
+// 集成预测(三模型加权融合)
+export interface EnsemblePrediction {
+  homeWinProb: number;
+  drawProb: number;
+  awayWinProb: number;
+  /** 各模型的贡献权重 */
+  weights: { ai: number; statistical: number; market: number };
+  /** 共识比分 */
+  consensusHome: number;
+  consensusAway: number;
+}
+
+// 模型一致性
+export type ModelAgreement = 'high' | 'medium' | 'low';
+
 // 视图层组合
 export interface MatchWithTeams extends Match {
   homeTeam: Team;
   awayTeam: Team;
   prediction?: MatchPrediction;
+  statisticalPrediction?: StatisticalPrediction;
+  marketConsensus?: MarketConsensus;
+  ensemble?: EnsemblePrediction;
+  h2h?: HeadToHead;
+  modelAgreement?: ModelAgreement;
 }

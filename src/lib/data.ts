@@ -3,7 +3,12 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { FIXTURES_MOCK, STANDINGS_MOCK, TEAMS_MOCK, TEAM_ANALYSIS_MOCK } from './mock';
-import type { MatchWithTeams, GroupStanding, Team, TeamAnalysis, MatchPrediction, Match, AnalysisBlock } from './types';
+import { predictMatch, modelAgreement } from './predict/statistical-model';
+import { ensemblePredict } from './predict/ensemble';
+import type {
+  MatchWithTeams, GroupStanding, Team, TeamAnalysis, MatchPrediction, Match,
+  AnalysisBlock, HeadToHead, MarketConsensus,
+} from './types';
 
 interface RawTeam extends Team {
   tla: string;
@@ -18,6 +23,55 @@ let _predictionsCache: Record<string, Omit<MatchPrediction, 'matchId'>> | null =
 let _analysisCache: Record<string, Omit<TeamAnalysis, 'teamId'>> | null = null;
 let _matchAnalysisDetailCache: Record<string, AnalysisBlock[]> | null = null;
 let _teamAnalysisDetailCache: Record<string, AnalysisBlock[]> | null = null;
+let _eloCache: Record<string, number> | null = null;
+let _h2hCache: Record<string, HeadToHead> | null = null;
+let _marketOddsCache: Record<string, MarketConsensus> | null = null;
+
+async function loadMarketOdds(): Promise<Record<string, MarketConsensus>> {
+  if (_marketOddsCache) return _marketOddsCache;
+  const fromJson = await readJsonOrNull<Record<string, MarketConsensus>>('market-odds.json');
+  _marketOddsCache = fromJson ?? {};
+  return _marketOddsCache;
+}
+
+async function loadElo(): Promise<Record<string, number>> {
+  if (_eloCache) return _eloCache;
+  const fromJson = await readJsonOrNull<Record<string, number | string>>('elo-ratings.json');
+  if (!fromJson) {
+    _eloCache = {};
+    return _eloCache;
+  }
+  const clean: Record<string, number> = {};
+  for (const [k, v] of Object.entries(fromJson)) {
+    if (k.startsWith('_')) continue;
+    if (typeof v === 'number') clean[k] = v;
+  }
+  _eloCache = clean;
+  return _eloCache;
+}
+
+async function loadH2H(): Promise<Record<string, HeadToHead>> {
+  if (_h2hCache) return _h2hCache;
+  const fromJson = await readJsonOrNull<Record<string, HeadToHead | unknown>>('head-to-head.json');
+  if (!fromJson) {
+    _h2hCache = {};
+    return _h2hCache;
+  }
+  const clean: Record<string, HeadToHead> = {};
+  for (const [k, v] of Object.entries(fromJson)) {
+    if (k.startsWith('_')) continue;
+    if (v && typeof v === 'object' && 'overall' in v) {
+      const obj = v as Record<string, unknown>;
+      clean[k] = {
+        overall: String(obj.overall ?? ''),
+        recentScores: Array.isArray(obj.recentScores) ? obj.recentScores.map(String) : [],
+        note: String(obj.note ?? ''),
+      };
+    }
+  }
+  _h2hCache = clean;
+  return _h2hCache;
+}
 
 async function loadDetailMap(file: string): Promise<Record<string, AnalysisBlock[]>> {
   const fromJson = await readJsonOrNull<Record<string, AnalysisBlock[] | string>>(file);
@@ -119,30 +173,66 @@ async function attach(
   teamMap: Map<string, Team>,
   preds: Record<string, Omit<MatchPrediction, 'matchId'>>,
   details: Record<string, AnalysisBlock[]>,
+  elo: Record<string, number>,
+  h2hMap: Record<string, HeadToHead>,
+  marketOdds: Record<string, MarketConsensus>,
 ): Promise<MatchWithTeams | null> {
   const ht = teamMap.get(m.homeTeamId);
   const at = teamMap.get(m.awayTeamId);
   if (!ht || !at) return null;
   const pred = preds[m.id];
   const detail = details[m.id];
+  const aiPrediction = pred
+    ? { matchId: m.id, ...pred, analysisDetail: detail ?? pred.analysisDetail }
+    : undefined;
+
+  // 统计模型预测(只对未结束比赛)
+  let statisticalPrediction: MatchWithTeams['statisticalPrediction'];
+  let agreement: MatchWithTeams['modelAgreement'];
+  const finished = m.status === 'FINISHED';
+  if (!finished) {
+    const homeElo = elo[m.homeTeamId];
+    const awayElo = elo[m.awayTeamId];
+    if (homeElo && awayElo) {
+      // 末轮平局倾向加成(双方都接近出线时容易踢平)
+      const drawBoost = m.matchday === 3 ? 0.05 : 0;
+      statisticalPrediction = predictMatch(homeElo, awayElo, drawBoost);
+      if (aiPrediction) {
+        agreement = modelAgreement(aiPrediction, statisticalPrediction).agreement;
+      }
+    }
+  }
+
+  // 市场共识
+  const market = !finished ? marketOdds[m.id] : undefined;
+
+  // 三模型集成
+  const ensemble = !finished
+    ? ensemblePredict(aiPrediction, statisticalPrediction, market)
+    : undefined;
+
   return {
     ...m,
     homeTeam: ht,
     awayTeam: at,
-    prediction: pred
-      ? { matchId: m.id, ...pred, analysisDetail: detail ?? pred.analysisDetail }
-      : undefined,
+    prediction: aiPrediction,
+    statisticalPrediction,
+    marketConsensus: market,
+    ensemble,
+    h2h: h2hMap[m.id],
+    modelAgreement: agreement,
   };
 }
 
 export async function getAllFixtures(): Promise<MatchWithTeams[]> {
-  const [teams, matches, preds, details] = await Promise.all([
+  const [teams, matches, preds, details, elo, h2h, marketOdds] = await Promise.all([
     loadTeams(), loadMatches(), loadPredictions(), loadMatchAnalysisDetails(),
+    loadElo(), loadH2H(), loadMarketOdds(),
   ]);
   const map = new Map(teams.map((t) => [t.id, t]));
   const out: MatchWithTeams[] = [];
   for (const m of matches) {
-    const x = await attach(m, map, preds, details);
+    const x = await attach(m, map, preds, details, elo, h2h, marketOdds);
     if (x) out.push(x);
   }
   return out;

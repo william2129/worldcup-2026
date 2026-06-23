@@ -6,6 +6,10 @@ import { zhCN } from 'date-fns/locale';
 import { Flag } from '@/components/flag';
 import { ProbabilityBar } from '@/components/probability-bar';
 import { RichBlocks } from '@/components/rich-blocks';
+import { StatisticalCard } from '@/components/statistical-card';
+import { H2HCard } from '@/components/h2h-card';
+import { MarketCard } from '@/components/market-card';
+import { EnsembleCard } from '@/components/ensemble-card';
 import { getAllFixtures, getFixtureById, getMatchesByTeam } from '@/lib/data';
 import { STAGE_LABEL } from '@/lib/team-i18n';
 import { cn } from '@/lib/utils';
@@ -187,6 +191,19 @@ function FinishedView({ match, homeForm, awayForm }: { match: MatchWithTeams; ho
 }
 
 // ============================== 未踢/进行中视图 ==============================
+function AgreementBadge({ a }: { a: 'high' | 'medium' | 'low' }) {
+  const m = {
+    high: { tone: 'bg-accent-green/15 text-accent-green', label: '模型一致 ✓' },
+    medium: { tone: 'bg-accent-gold/15 text-accent-gold', label: '部分一致' },
+    low: { tone: 'bg-accent-red/15 text-accent-red', label: '模型分歧 ⚠' },
+  } as const;
+  return (
+    <span className={cn('chip', m[a].tone)} title="AI 判断 vs 统计模型的一致性">
+      {m[a].label}
+    </span>
+  );
+}
+
 function UpcomingView({
   match,
   live,
@@ -199,14 +216,20 @@ function UpcomingView({
   awayForm: FormItem[];
 }) {
   const p = match.prediction;
+  const stat = match.statisticalPrediction;
   return (
     <>
+      {match.modelAgreement && (
+        <div className="flex justify-end -mt-1">
+          <AgreementBadge a={match.modelAgreement} />
+        </div>
+      )}
       {p ? (
         <section className="card overflow-hidden">
           <div className="flex items-center justify-between border-b border-pitch-line px-5 py-2.5">
             <div className="flex items-center gap-2">
               <span className="grid h-6 w-6 place-items-center rounded-md bg-accent-gold/20 text-[11px] font-bold text-accent-gold">AI</span>
-              <span className="font-display text-sm font-semibold">预测分析</span>
+              <span className="font-display text-sm font-semibold">AI 判断</span>
             </div>
             <ConfidenceBadge value={p.confidence} />
           </div>
@@ -240,6 +263,14 @@ function UpcomingView({
           {live ? '比赛进行中' : '这场比赛的 AI 预测尚未生成'}
         </section>
       )}
+
+      {match.ensemble && <EnsembleCard ensemble={match.ensemble} />}
+
+      {stat && <StatisticalCard pred={stat} />}
+
+      {match.marketConsensus && <MarketCard market={match.marketConsensus} />}
+
+      {match.h2h && <H2HCard h2h={match.h2h} homeName={match.homeTeam.name} awayName={match.awayTeam.name} />}
 
       {p?.analysisDetail && p.analysisDetail.length > 0 && (
         <section className="card p-5">
