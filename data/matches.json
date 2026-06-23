@@ -395,12 +395,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "C",
     "utcDate": "2026-06-20T00:30:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "bra",
     "awayTeamId": "hai",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 3,
+    "awayScore": 0
   },
   {
     "id": "m_537347",
@@ -408,12 +408,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "D",
     "utcDate": "2026-06-20T03:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "tur",
     "awayTeamId": "par",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 0,
+    "awayScore": 1
   },
   {
     "id": "m_537359",
@@ -421,12 +421,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "F",
     "utcDate": "2026-06-20T17:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "ned",
     "awayTeamId": "swe",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 5,
+    "awayScore": 1
   },
   {
     "id": "m_537353",
@@ -434,12 +434,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "E",
     "utcDate": "2026-06-20T20:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "ger",
     "awayTeamId": "civ",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 2,
+    "awayScore": 1
   },
   {
     "id": "m_537354",
@@ -447,12 +447,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "E",
     "utcDate": "2026-06-21T00:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "ecu",
     "awayTeamId": "cuw",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m_537360",
@@ -460,12 +460,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "F",
     "utcDate": "2026-06-21T04:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "tun",
     "awayTeamId": "jpn",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 0,
+    "awayScore": 4
   },
   {
     "id": "m_537371",
@@ -473,12 +473,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "H",
     "utcDate": "2026-06-21T16:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "esp",
     "awayTeamId": "ksa",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 4,
+    "awayScore": 0
   },
   {
     "id": "m_537365",
@@ -486,12 +486,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "G",
     "utcDate": "2026-06-21T19:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "bel",
     "awayTeamId": "irn",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m_537372",
@@ -499,12 +499,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "H",
     "utcDate": "2026-06-21T22:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "uru",
     "awayTeamId": "cpv",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 2,
+    "awayScore": 2
   },
   {
     "id": "m_537366",
@@ -512,12 +512,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "G",
     "utcDate": "2026-06-22T01:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "nzl",
     "awayTeamId": "egy",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 1,
+    "awayScore": 3
   },
   {
     "id": "m_537399",
@@ -525,12 +525,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "J",
     "utcDate": "2026-06-22T17:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "arg",
     "awayTeamId": "aut",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 2,
+    "awayScore": 0
   },
   {
     "id": "m_537393",
@@ -538,12 +538,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "I",
     "utcDate": "2026-06-22T21:00:00Z",
-    "status": "SCHEDULED",
+    "status": "FINISHED",
     "matchday": 2,
     "homeTeamId": "fra",
     "awayTeamId": "irq",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 3,
+    "awayScore": 0
   },
   {
     "id": "m_537394",
@@ -551,12 +551,12 @@
     "stage": "GROUP_STAGE",
     "groupId": "I",
     "utcDate": "2026-06-23T00:00:00Z",
-    "status": "SCHEDULED",
+    "status": "LIVE",
     "matchday": 2,
     "homeTeamId": "nor",
     "awayTeamId": "sen",
-    "homeScore": null,
-    "awayScore": null
+    "homeScore": 3,
+    "awayScore": 1
   },
   {
     "id": "m_537400",

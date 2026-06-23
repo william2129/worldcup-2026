@@ -1,311 +1,226 @@
 {
-  "_README": "由 Claude Opus 4.7 基于 2026-06-20 已踢 30 场真实结果生成的剩余 42 场小组赛预测。淘汰赛对阵未定,小组赛全部踢完后再追加。",
-  "_generatedAt": "2026-06-20T08:30:00+08:00",
+  "_README": "由 Claude Opus 4.7 基于 2026-06-23 已踢 42 场真实结果生成的剩余 30 场小组赛预测。综合考虑统计模型(Dixon-Coles)、市场共识赔率与当前小组积分形势。淘汰赛对阵未定,小组赛全部踢完后再追加。",
+  "_generatedAt": "2026-06-23T09:50:00+08:00",
   "_modelVersion": "claude-opus-4-7",
 
-  "m_537332": {
-    "homeScore": 1, "awayScore": 2,
-    "homeWinProb": 0.18, "drawProb": 0.27, "awayWinProb": 0.55,
-    "confidence": 0.6,
-    "reasoning": "南非 1 分小组垫底,基本无望出线,可能会让边缘球员上场练兵。韩国仅 3 分需要拿下才能保住第二,孙兴慜与李刚仁的进攻组合面对南非防线占据明显个人能力优势。预计南非主打防守反击,韩国能在下半场打开局面。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537331": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.28, "drawProb": 0.40, "awayWinProb": 0.32,
-    "confidence": 0.55,
-    "reasoning": "墨西哥 6 分锁定头名后将大量轮换,主力体能控制是首要任务。捷克仅 1 分需要全取 3 分才有出线希望,会全力前压。墨西哥替补阵容仍具组织能力,但面对求胜捷克的高强度逼抢,1-1 是一个平衡结果。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537338": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.46, "drawProb": 0.27, "awayWinProb": 0.27,
-    "confidence": 0.5,
-    "reasoning": "波黑和卡塔尔在加拿大、瑞士手上都已被打爆,出线均极困难。波黑整体技战术水平高于卡塔尔一档,泽马拉伊基奇等中场球员能够创造机会。卡塔尔则在 0-6 惨败加拿大后士气低迷,后防漏洞需要时间修补。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537337": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.30, "drawProb": 0.38, "awayWinProb": 0.32,
-    "confidence": 0.58,
-    "reasoning": "瑞士、加拿大同积 4 分争头名,一分即可锁定 1/16 决赛对阵更弱小组第二的优待。两队都不需要冒险全攻全守,主教练大概率选择控场而非对攻。加拿大上一场 6-0 攻击力火爆,瑞士防线扎实,平局对双方都有利。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537341": {
-    "homeScore": 3, "awayScore": 0,
-    "homeWinProb": 0.82, "drawProb": 0.12, "awayWinProb": 0.06,
-    "confidence": 0.78,
-    "reasoning": "巴西首战 1-1 平摩洛哥后承担巨大压力,必须在与海地的较量中找回火力。维尼修斯、罗德里戈和拉斐尼亚的速度优势对海地后防是降维打击。海地虽顽强抗住了苏格兰一场,但面对世界级三叉戟难有招架之力。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537343": {
-    "homeScore": 1, "awayScore": 2,
-    "homeWinProb": 0.25, "drawProb": 0.25, "awayWinProb": 0.50,
-    "confidence": 0.62,
-    "reasoning": "巴西出线告急必须取胜,而苏格兰拿到 3 分形势良好但若放弃进攻可能反被翻盘。预计苏格兰会用 5-4-1 死守,巴西凭借持续控球和定位球优势在下半场打破僵局,但苏格兰仍可能凭一次反击进球。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537344": {
-    "homeScore": 2, "awayScore": 0,
-    "homeWinProb": 0.75, "drawProb": 0.18, "awayWinProb": 0.07,
-    "confidence": 0.72,
-    "reasoning": "摩洛哥仅需 1 分即可大概率出线,但面对积分垫底的海地有动力全取 3 分锁头名。哈基米、迪亚斯和恩奈斯里组成的核心阵容已显示出对弱旅的统治力,海地此前 0-1 不敌苏格兰显示进攻火力不足。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537347": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.50, "drawProb": 0.25, "awayWinProb": 0.25,
-    "confidence": 0.55,
-    "reasoning": "土耳其和巴拉圭都 0 分输不起,两队此战胜者还有出线希望,败者基本告别。土耳其阵容平均年龄更轻、技术更细腻,居莱尔和恰尔汗奥卢的中场组织优势明显;巴拉圭则靠身体硬度和反击。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537350": {
-    "homeScore": 1, "awayScore": 2,
-    "homeWinProb": 0.28, "drawProb": 0.27, "awayWinProb": 0.45,
-    "confidence": 0.55,
-    "reasoning": "澳大利亚 3 分有机会出线,赢球即可基本锁定 1/16 决赛门票。巴拉圭如果首场输给土耳其则已无望,会派出更多年轻球员练兵。袋鼠军团的身体对抗优势在末轮疲劳期会被放大。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537349": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.25, "drawProb": 0.40, "awayWinProb": 0.35,
-    "confidence": 0.5,
-    "reasoning": "美国 2 连胜锁定头名后会大幅轮换,普利西奇等核心需要休息备战淘汰赛。土耳其末轮如果还有出线希望会全力一搏。两队战意不对称下平局风险较高,但土耳其有一定取胜可能。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537353": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.55, "drawProb": 0.22, "awayWinProb": 0.23,
-    "confidence": 0.62,
-    "reasoning": "德国 7-1 屠库拉索展现可怕火力,穆夏拉和维尔茨在锋线后腰位置上灵感四射。科特迪瓦防守扎实,首战 1-0 厄瓜多尔靠纪律取胜。两强相遇,德国整体实力更胜一筹,但科特迪瓦能凭防守反击进 1 球。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537354": {
-    "homeScore": 2, "awayScore": 0,
-    "homeWinProb": 0.68, "drawProb": 0.22, "awayWinProb": 0.10,
-    "confidence": 0.68,
-    "reasoning": "厄瓜多尔在首战 0-1 不敌科特迪瓦后必须取胜才有出线希望,加拉松基本面比库拉索强一档。库拉索作为首次参赛球队,上一场 1-7 惨败给德国信心受挫。预测厄瓜多尔从中场到锋线全面压制。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537356": {
-    "homeScore": 0, "awayScore": 3,
-    "homeWinProb": 0.06, "drawProb": 0.14, "awayWinProb": 0.80,
-    "confidence": 0.75,
-    "reasoning": "若科特迪瓦前两场拿下 3 分,在末轮对阵已淘汰的库拉索时会派出较强阵容争头名。哈勒、阿德米和库杜斯的攻击线对应库拉索糟糕的防守组织,差距明显。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537355": {
-    "homeScore": 1, "awayScore": 2,
-    "homeWinProb": 0.22, "drawProb": 0.25, "awayWinProb": 0.53,
-    "confidence": 0.6,
-    "reasoning": "若德国前两场拿到 4-6 分,末轮可以轮换部分主力。厄瓜多尔此战必须取胜,会全力进攻。德国的轮换阵容仍具备一定实力,凯米希加防守反击足以拿下比赛。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537359": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.45, "drawProb": 0.27, "awayWinProb": 0.28,
-    "confidence": 0.55,
-    "reasoning": "荷兰首场 2-2 平日本展示了进攻天赋但防守不稳,瑞典 5-1 屠突尼斯火力凶猛。这是 F 组生死战,两支北欧/低地强队风格类似:身高、定位球、长传。荷兰中场组织更细腻,在自家洲际作战经验占优。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537360": {
-    "homeScore": 1, "awayScore": 3,
-    "homeWinProb": 0.13, "drawProb": 0.22, "awayWinProb": 0.65,
-    "confidence": 0.7,
-    "reasoning": "日本首场被荷兰逼平但展现了高水平的技战术,久保和南野的传切配合稳定。突尼斯首场 1-5 大比分输给瑞典暴露后防漏洞,加上必须取胜的处境,会被日本反击多次打穿。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537362": {
-    "homeScore": 2, "awayScore": 2,
-    "homeWinProb": 0.32, "drawProb": 0.36, "awayWinProb": 0.32,
-    "confidence": 0.52,
-    "reasoning": "末轮 F 组形势复杂,日本与瑞典若都有出线机会会全力对攻。日本控球细腻,瑞典身体硬朗,长短结合的对抗将贯穿全场。考虑到双方实力相近且都不想输,2-2 是合理结果。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537361": {
-    "homeScore": 0, "awayScore": 3,
-    "homeWinProb": 0.08, "drawProb": 0.15, "awayWinProb": 0.77,
-    "confidence": 0.7,
-    "reasoning": "荷兰末轮对突尼斯,如果前两场已基本出线,仍会力争头名以避开强组第一。橙衣军团整体实力高出突尼斯一截,突尼斯已无心恋战,3-0 是合理结果。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537365": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.55, "drawProb": 0.22, "awayWinProb": 0.23,
-    "confidence": 0.6,
-    "reasoning": "比利时首战 1-1 平埃及让人意外,但实力面前他们仍是 G 组热门。德布劳内的传球质量、卢卡库的支点作用对伊朗防线构成持续威胁。伊朗 2-2 平新西兰显示后防不稳,塔雷米需要更多支援。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537366": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.30, "drawProb": 0.38, "awayWinProb": 0.32,
-    "confidence": 0.5,
-    "reasoning": "新西兰、埃及实力接近,首战均拿到 1 分,此战平局对双方都不算坏结果。新西兰身体强硬,埃及凭萨拉赫的反击。两队都缺少高质量进攻终结,1-1 是合理走势。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537368": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.32, "drawProb": 0.36, "awayWinProb": 0.32,
-    "confidence": 0.5,
-    "reasoning": "末轮 G 组若比利时锁头名,埃及与伊朗的次名之争将非常胶着。两队都依赖核心球员(萨拉赫/塔雷米)的个人能力,中场组织有限,平局是较稳的预期。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537367": {
-    "homeScore": 0, "awayScore": 2,
-    "homeWinProb": 0.15, "drawProb": 0.25, "awayWinProb": 0.60,
-    "confidence": 0.62,
-    "reasoning": "比利时末轮如果还需要拿分锁头名会全力出战,新西兰整体实力差一档。德布劳内或多库的边路传中是新西兰防线难解的题。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537371": {
-    "homeScore": 2, "awayScore": 0,
-    "homeWinProb": 0.74, "drawProb": 0.18, "awayWinProb": 0.08,
-    "confidence": 0.7,
-    "reasoning": "西班牙首战 0-0 平佛得角受到外界质疑,但年轻一代如亚马尔、佩德里仍有充足创造力,问题在终结。沙特此役没退路必须取胜会前压,反而给西班牙更多反击空间。亚马尔本场有望破门。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537372": {
-    "homeScore": 2, "awayScore": 0,
-    "homeWinProb": 0.62, "drawProb": 0.25, "awayWinProb": 0.13,
-    "confidence": 0.6,
-    "reasoning": "乌拉圭首战 1-1 平沙特表现保守,本场必须拿下佛得角才能掌握主动。努涅斯、巴尔韦德的进攻火力远超对手。佛得角作为黑马首战与西班牙互交白卷,但乌拉圭风格更直接。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537374": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.32, "drawProb": 0.40, "awayWinProb": 0.28,
-    "confidence": 0.48,
-    "reasoning": "佛得角与沙特实力接近,若末轮一方已无出线希望则可能放弃。两队进攻火力均有限,中场对抗激烈但难造威胁射门,平局可能性较高。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537373": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.30, "drawProb": 0.38, "awayWinProb": 0.32,
-    "confidence": 0.55,
-    "reasoning": "西班牙、乌拉圭都将这场视为决头名之战。西班牙控球能力一流,乌拉圭则身体对抗硬朗、爱犯规但效率高。双方风格相互克制,1-1 反映了势均力敌的格局。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537393": {
-    "homeScore": 3, "awayScore": 0,
-    "homeWinProb": 0.82, "drawProb": 0.12, "awayWinProb": 0.06,
-    "confidence": 0.78,
-    "reasoning": "法国首战 3-1 塞内加尔已经展现攻击线的高水准,姆巴佩持续保持高效率。伊拉克作为弱旅首战 1-4 输给挪威,防线难以抵抗法国的持续压迫。预计姆巴佩、登贝莱在前 60 分钟解决战斗。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
   "m_537394": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.55, "drawProb": 0.22, "awayWinProb": 0.23,
-    "confidence": 0.6,
-    "reasoning": "挪威首战 4-1 屠伊拉克,哈兰德爆发态势明显。塞内加尔输给法国后必须取胜才能保留出线希望,前压会被哈兰德的速度多次打穿。但塞内加尔进攻锋线萨尔仍能进 1 球。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537396": {
-    "homeScore": 3, "awayScore": 0,
-    "homeWinProb": 0.78, "drawProb": 0.16, "awayWinProb": 0.06,
-    "confidence": 0.74,
-    "reasoning": "塞内加尔末轮对伊拉克为荣誉而战,实力差距明显。马内、库利巴利的核心阵容对伊拉克的体能型防守占绝对优势。塞内加尔需要大胜确保净胜球优势。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537395": {
-    "homeScore": 1, "awayScore": 2,
-    "homeWinProb": 0.30, "drawProb": 0.22, "awayWinProb": 0.48,
-    "confidence": 0.58,
-    "reasoning": "挪威与法国决头名,这是 I 组焦点战。哈兰德 vs 姆巴佩两大顶级前锋直接对话。法国整体阵容深度和大赛经验更胜一筹,但挪威可凭哈兰德个人能力进 1 球。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
-  "m_537399": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.52, "drawProb": 0.25, "awayWinProb": 0.23,
-    "confidence": 0.6,
-    "reasoning": "阿根廷首战 3-0 阿尔及利亚后状态正佳,梅西+劳塔罗组合手感火热。奥地利首战 3-1 约旦展现高效进攻,阿瑙托维奇与扎比策尔的中前场组合质量很高。两强相争,阿根廷大赛经验更足。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
+    "homeScore": 3, "awayScore": 1,
+    "homeWinProb": 0.78, "drawProb": 0.14, "awayWinProb": 0.08,
+    "confidence": 0.78,
+    "reasoning": "挪威两连胜 6 分领跑 I 组,哈兰德首两场进 3 球状态火爆,主场作战 + 净胜球已 +5。塞内加尔两连败 0 分排小组末位,马内复出迫在眉睫但球队整体进攻乏力(两场仅 2 球)。市场赔率给出 93% 挪威胜的极端倾向,说明博彩公司也认为塞内加尔已无翻盘动能。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
   },
   "m_537400": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.32, "drawProb": 0.38, "awayWinProb": 0.30,
-    "confidence": 0.5,
-    "reasoning": "约旦和阿尔及利亚都已输首场,出线机会渺茫。两队整体实力接近,阿尔及利亚个体能力略胜,约旦组织性更好。生死战双方都不会冒进,平局是较稳的预期。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537402": {
-    "homeScore": 0, "awayScore": 2,
-    "homeWinProb": 0.18, "drawProb": 0.25, "awayWinProb": 0.57,
-    "confidence": 0.62,
-    "reasoning": "奥地利末轮对阿尔及利亚,如果还需要拿分则会全力出战。奥地利中前场的传控+空切体系在体能下降期对阿尔及利亚仍构成实际威胁。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537401": {
-    "homeScore": 0, "awayScore": 3,
-    "homeWinProb": 0.05, "drawProb": 0.12, "awayWinProb": 0.83,
-    "confidence": 0.8,
-    "reasoning": "阿根廷已基本锁定出线,即使轮换实力依然碾压约旦。梅西可能首发 60 分钟为淘汰赛热身,劳塔罗、阿尔瓦雷斯轮替出场仍能进球。约旦近年没有击败传统强队的经验。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
+    "homeScore": 1, "awayScore": 2,
+    "homeWinProb": 0.18, "drawProb": 0.24, "awayWinProb": 0.58,
+    "confidence": 0.55,
+    "reasoning": "约旦与阿尔及利亚均首战告负(分别 1-3、0-3 输给奥地利和阿根廷),本场是双方仅剩的出线火种,必须取胜+净胜球。阿尔及利亚个人能力略胜一筹,马赫雷斯+本拉赫马的边路冲击对约旦防线威胁较大。约旦防守反击或能进 1 球,但难取胜。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
   },
 
   "m_537405": {
-    "homeScore": 3, "awayScore": 0,
-    "homeWinProb": 0.74, "drawProb": 0.18, "awayWinProb": 0.08,
+    "homeScore": 2, "awayScore": 0,
+    "homeWinProb": 0.70, "drawProb": 0.20, "awayWinProb": 0.10,
     "confidence": 0.7,
-    "reasoning": "葡萄牙首战 1-1 平刚果(金)表现平平,但 C 罗、B 费、若塔的进攻线绝非乌兹别克斯坦后防能扛。乌兹首场 1-3 输给哥伦比亚,本场作为出线生死战会拼,但实力差距明显。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
+    "reasoning": "葡萄牙首战 1-1 平刚果(金),进攻效率不及预期,本场必须拿分回到正轨。乌兹别克斯坦首战 1-3 输给哥伦比亚,实力上整整低一档。C 罗、B·费尔南德斯、若塔的进攻线对乌兹中后场仍是降维打击。市场赔率 82% 葡萄牙胜,与统计模型 62% 的差距说明博彩看好葡萄牙能找回火力。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
   },
-  "m_537406": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.55, "drawProb": 0.23, "awayWinProb": 0.22,
-    "confidence": 0.6,
-    "reasoning": "哥伦比亚 3-1 屠乌兹后状态火热,J·罗、迪亚斯的进攻组合炙手可热。刚果(金)首战 1-1 平葡萄牙展现强硬防守,但面对哥伦比亚的速度+技术会被打开。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537408": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.48, "drawProb": 0.25, "awayWinProb": 0.27,
-    "confidence": 0.55,
-    "reasoning": "刚果(金)与乌兹的末轮关乎出线第三名争夺,刚果(金)整体身体素质和经验占优,但乌兹中场技术不差。预计刚果(金)用边路冲击打破僵局。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-  "m_537407": {
-    "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.34, "drawProb": 0.36, "awayWinProb": 0.30,
-    "confidence": 0.55,
-    "reasoning": "哥伦比亚与葡萄牙决头名,势均力敌。葡萄牙阵容齐整 C 罗+B 费,哥伦比亚 J·罗+迪亚斯。双方都不会放弃,但都不愿在头名战中受伤,1-1 是合理结果。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
-  },
-
   "m_537411": {
-    "homeScore": 2, "awayScore": 1,
-    "homeWinProb": 0.58, "drawProb": 0.23, "awayWinProb": 0.19,
-    "confidence": 0.62,
-    "reasoning": "英格兰首战 4-2 克罗地亚火力凶猛,贝林厄姆、福登、凯恩状态在线。加纳 1-0 巴拿马靠铁血赢球,但与英格兰技战术存在差距。加纳防守反击可能撕出 1 球,但难阻三狮。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
+    "homeScore": 3, "awayScore": 1,
+    "homeWinProb": 0.72, "drawProb": 0.18, "awayWinProb": 0.10,
+    "confidence": 0.72,
+    "reasoning": "英格兰首战 4-2 屠克罗地亚火力凶猛,贝林厄姆、福登、凯恩状态在线,赢球可基本锁定头名。加纳首战 1-0 险胜巴拿马,防守扎实但攻击力有限。预计英格兰中场控制能力打开局面,加纳凭定位球或反击进 1 球。市场 79% 倾向英格兰胜符合实力差距。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
   },
   "m_537412": {
     "homeScore": 1, "awayScore": 2,
-    "homeWinProb": 0.28, "drawProb": 0.25, "awayWinProb": 0.47,
-    "confidence": 0.55,
-    "reasoning": "克罗地亚首战 2-4 输给英格兰后士气受挫但 0-0 0 分的处境必须取胜。莫德里奇、克瓦尔达组合仍具控场能力。巴拿马首战输给加纳,实力上比克罗地亚差一档,被反扑可能性大。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
+    "homeWinProb": 0.20, "drawProb": 0.20, "awayWinProb": 0.60,
+    "confidence": 0.6,
+    "reasoning": "克罗地亚 2-4 输给英格兰后必须取胜才能保留出线希望,莫德里奇、佩尔西奇等老将经验丰富会全力压上。巴拿马 0-1 输给加纳排小组末位,实力本就低一档。预计克罗地亚的中场控制和定位球优势会扳回一城,但巴拿马拼抢可能扳回 1 球。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
   },
-  "m_537414": {
+
+  "m_537406": {
+    "homeScore": 2, "awayScore": 1,
+    "homeWinProb": 0.58, "drawProb": 0.24, "awayWinProb": 0.18,
+    "confidence": 0.62,
+    "reasoning": "哥伦比亚首战 3-1 屠乌兹后状态火热,J·罗、L·迪亚斯的边路+前场配合默契度高。刚果(金)首战 1-1 战平葡萄牙展现出强硬防守,但面对哥伦比亚南美式的脚下技术与速度会被穿透。市场 62% 哥伦比亚胜与统计 52% 相近,共识较强。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537337": {
     "homeScore": 1, "awayScore": 1,
-    "homeWinProb": 0.32, "drawProb": 0.38, "awayWinProb": 0.30,
-    "confidence": 0.5,
-    "reasoning": "克罗地亚和加纳末轮的形势取决于第二轮结果,但两队风格相克(克罗地亚控球+加纳反击)往往打成胶着平局。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
+    "homeWinProb": 0.36, "drawProb": 0.34, "awayWinProb": 0.30,
+    "confidence": 0.55,
+    "reasoning": "瑞士、加拿大同积 4 分争头名,加拿大净胜球(+6)远好于瑞士(+3),一分即可锁定 B 组第一并避开 A 组头名墨西哥。两队都不需要冒险全攻,主教练大概率选择控场+对方半场逼抢但不冒进。加拿大上一场 6-0 屠卡塔尔展示火力,瑞士防线扎实,1-1 对双方都最优。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
   },
-  "m_537413": {
+  "m_537338": {
+    "homeScore": 1, "awayScore": 0,
+    "homeWinProb": 0.52, "drawProb": 0.26, "awayWinProb": 0.22,
+    "confidence": 0.52,
+    "reasoning": "波黑与卡塔尔同积 1 分但出线均极困难,两队需大胜+其他场次有利结果。波黑技战术水平比卡塔尔高一档,泽马拉伊基奇等中场具备组织能力。卡塔尔此前 1-6 惨败加拿大后士气低迷且防线问题严重,本场难以反弹。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537344": {
+    "homeScore": 2, "awayScore": 0,
+    "homeWinProb": 0.74, "drawProb": 0.18, "awayWinProb": 0.08,
+    "confidence": 0.74,
+    "reasoning": "摩洛哥两场 4 分排小组次席,出线大局已定,本场需拿分确保头名争夺。海地两连败垫底已基本被淘汰,本场为荣誉而战。摩洛哥的哈基米、齐耶赫的边路冲击对海地后防是绝对的实力压制,市场 81% 摩洛哥胜符合实力差距。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537343": {
+    "homeScore": 0, "awayScore": 2,
+    "homeWinProb": 0.16, "drawProb": 0.20, "awayWinProb": 0.64,
+    "confidence": 0.65,
+    "reasoning": "巴西两场 4 分领跑 C 组(末轮巴西、摩洛哥同分),必须全取 3 分才能锁定头名。维尼修斯、罗德里戈、拉斐尼亚的攻击三叉戟在小组赛逐渐磨合到位。苏格兰 3 分形势良好但若放弃进攻可能反被翻盘,大概率 5-4-1 死守。巴西凭借控球和定位球优势能击穿。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537331": {
+    "homeScore": 1, "awayScore": 1,
+    "homeWinProb": 0.30, "drawProb": 0.32, "awayWinProb": 0.38,
+    "confidence": 0.5,
+    "reasoning": "墨西哥 6 分锁定 A 组头名,本场将大量轮换为淘汰赛保留体能。捷克 1 分排第三,需取胜并寄希望于韩国不胜才能争 2 名或最佳第三。捷克会全力前压,墨西哥替补阵容仍有组织能力,1-1 是平衡结果。市场赔率显示捷胜与平局均势(25%/25%/50%)。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537332": {
+    "homeScore": 0, "awayScore": 2,
+    "homeWinProb": 0.18, "drawProb": 0.26, "awayWinProb": 0.56,
+    "confidence": 0.6,
+    "reasoning": "韩国 3 分排次席,本场拿分即可锁定出线。南非仅 1 分排末位,需大胜并寄希望于捷克不胜才能搏最佳第三。孙兴慜、李刚仁的进攻组合对南非防线占据明显个人能力优势。预计南非主打防守反击,韩国在下半场打开局面拿下 2-0。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537355": {
+    "homeScore": 1, "awayScore": 2,
+    "homeWinProb": 0.22, "drawProb": 0.28, "awayWinProb": 0.50,
+    "confidence": 0.55,
+    "reasoning": "德国两场 6 分锁定 E 组头名+小组净胜球+7 已展现统治力,本场可能轮换但主力仍会上半场打。厄瓜多尔仅 1 分(2 场 0 进 1 失),必须取胜并寄希望于科特迪瓦不胜才能争 3 名。德国凭借穆西亚拉、维尔茨、哈弗茨的进攻三人组拿分难度低。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537356": {
+    "homeScore": 0, "awayScore": 3,
+    "homeWinProb": 0.08, "drawProb": 0.16, "awayWinProb": 0.76,
+    "confidence": 0.7,
+    "reasoning": "库拉索 1 分但净胜球 -6(被德国进 6 球),实质已被淘汰。科特迪瓦 3 分排第二,本场只需平局即可基本锁定出线。哈勒、巴卡约科、克鲁伊维特的攻击线对库拉索是直接降维打击,市场 83% 客胜表明博彩看准了实力鸿沟。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537361": {
+    "homeScore": 0, "awayScore": 3,
+    "homeWinProb": 0.06, "drawProb": 0.14, "awayWinProb": 0.80,
+    "confidence": 0.75,
+    "reasoning": "突尼斯两场净胜球 -8(2 场失 9 球)已确认被淘汰,士气低落。荷兰 4 分排小组第一+净胜球 +4,本场赢球可锁定头名。德佩、加克波、雷恩德斯的进攻线在前两轮场均 3.5 球,突尼斯防线难以抵抗。市场 85% 荷兰胜符合大屠杀预期。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537362": {
+    "homeScore": 2, "awayScore": 1,
+    "homeWinProb": 0.52, "drawProb": 0.26, "awayWinProb": 0.22,
+    "confidence": 0.55,
+    "reasoning": "日本与荷兰同积 4 分但日本净胜球 +4,本场赢球可与荷兰对结果争头名。瑞典 3 分排第三需取胜并看其他结果,前两场失 6 球的防线令人担忧。三笘薫、久保建英、堂安律的边路速度在主场气氛加持下能突破瑞典防线。日本胜面较大但难拿大比分。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537349": {
+    "homeScore": 1, "awayScore": 1,
+    "homeWinProb": 0.30, "drawProb": 0.32, "awayWinProb": 0.38,
+    "confidence": 0.5,
+    "reasoning": "土耳其两连败 0 分垫底已确认被淘汰,但欧洲球队荣誉感会让球员全力踢。美国 6 分锁定 D 组头名,本场大概率轮换+控制比赛。普利西奇等核心球员可能下半场登场。土耳其凭借居莱尔、约库斯卢的中场创造力或能扳一球。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537350": {
+    "homeScore": 1, "awayScore": 1,
+    "homeWinProb": 0.32, "drawProb": 0.36, "awayWinProb": 0.32,
+    "confidence": 0.5,
+    "reasoning": "巴拉圭与澳大利亚同积 3 分死磕第二名,巴拉圭净胜球 -2 略劣于澳大利亚的 0。双方都不会冒险全攻,1-1 平局可能两队都满意(若另一场土耳其负美国则双方同时出线)。市场赔率 42% 平局是较高数值,验证了博彩公司也认为打平可能性最高。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537395": {
+    "homeScore": 1, "awayScore": 2,
+    "homeWinProb": 0.26, "drawProb": 0.26, "awayWinProb": 0.48,
+    "confidence": 0.6,
+    "reasoning": "挪威与法国同积 6 分均已出线,本场争头名+避开淘汰赛硬签。哈兰德 vs 姆巴佩+登贝莱的顶级前锋对话引发关注。法国整体阵容深度+技战术成熟度更胜一筹,但挪威在主场+哈兰德个人能力下仍有威胁。市场 55% 法国胜符合大赛经验差距。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537396": {
+    "homeScore": 2, "awayScore": 0,
+    "homeWinProb": 0.66, "drawProb": 0.22, "awayWinProb": 0.12,
+    "confidence": 0.68,
+    "reasoning": "塞内加尔与伊拉克末轮均为荣誉而战,实力差距明显。塞内加尔的库利巴利、孟迪、迪亚等欧洲五大联赛球员对伊拉克的体能型阵容占绝对优势。市场 74% 塞胜共识强。塞内加尔会为最后一战找回颜面拿下大胜。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537373": {
+    "homeScore": 1, "awayScore": 2,
+    "homeWinProb": 0.20, "drawProb": 0.28, "awayWinProb": 0.52,
+    "confidence": 0.58,
+    "reasoning": "乌拉圭 2 分排次席(2 连平 3-3 净失球状),必须取分才能确保出线。西班牙 4 分领跑+净胜球 +4,赢球锁定头名。皮诺、丹尼·奥尔莫、亚马尔的攻击线已展现稳定输出,乌拉圭虽有努涅斯+巴尔韦德但防线漏洞较大。市场 64% 客胜认定西班牙优势。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537374": {
+    "homeScore": 1, "awayScore": 1,
+    "homeWinProb": 0.38, "drawProb": 0.30, "awayWinProb": 0.32,
+    "confidence": 0.5,
+    "reasoning": "佛得角与沙特同时争最佳第三名额,佛得角 2 分仅领先沙特 1 分。两队整体实力接近,佛得角阵容更整齐,沙特靠 4-5-1 死守。沙特如能爆冷拿分仍能搏出线,会全力拼抢。1-1 平局是双方风险最小的结果,但都需要 3 分,大概率会有进球往来。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537367": {
     "homeScore": 0, "awayScore": 2,
     "homeWinProb": 0.10, "drawProb": 0.20, "awayWinProb": 0.70,
     "confidence": 0.7,
-    "reasoning": "英格兰几乎已锁定出线,但会力争头名以避开强组第一。即使轮换部分主力,凯恩+萨卡或者沃特金斯仍能轻松解决巴拿马。巴拿马本届表现挣扎。",
-    "generatedAt": "2026-06-20T00:00:00Z", "generatedBy": "claude-opus-4-7"
+    "reasoning": "新西兰 1 分排垫底,基本已被淘汰。比利时 2 分(两场闷平 1-1 0-0)出线已悬,本场必须取胜并寄希望埃及不胜。德布劳内、卢卡库、多库的进攻线需要在末轮觉醒证明自己。新西兰的体能拼搏对世界排名前 10 的比利时仍难成事。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537368": {
+    "homeScore": 1, "awayScore": 1,
+    "homeWinProb": 0.32, "drawProb": 0.40, "awayWinProb": 0.28,
+    "confidence": 0.55,
+    "reasoning": "埃及 4 分领跑+伊朗 2 分排第二,平局对双方都最优(埃及锁定头名、伊朗大概率以最佳第三或第二出线)。萨拉赫与伊朗的塔雷米均处稳定状态,但两队的核心稳健打法决定了不会冒进。市场 35% 平局是较高赔率,验证两队都不需要冒险。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537413": {
+    "homeScore": 0, "awayScore": 3,
+    "homeWinProb": 0.08, "drawProb": 0.16, "awayWinProb": 0.76,
+    "confidence": 0.72,
+    "reasoning": "巴拿马 0 分小组垫底已被淘汰,本场为体面而战。英格兰大概率在末轮锁定头名后轮换,但主力仍会打开局面。凯恩、贝林厄姆、福登的连接已展现高效。市场 77% 英格兰胜符合实力差距与心理落差。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537414": {
+    "homeScore": 2, "awayScore": 1,
+    "homeWinProb": 0.56, "drawProb": 0.24, "awayWinProb": 0.20,
+    "confidence": 0.58,
+    "reasoning": "克罗地亚 0 分(取决于第二场结果)需取胜才有出线希望,本场为出线生死战。加纳 3 分若赢球可锁定出线第二。克罗地亚老将经验+技术更胜一筹,莫德里奇、克瓦尔达的中场控制能突破加纳的体能型防守。市场 58% 克胜符合实力对比。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537407": {
+    "homeScore": 1, "awayScore": 1,
+    "homeWinProb": 0.32, "drawProb": 0.32, "awayWinProb": 0.36,
+    "confidence": 0.55,
+    "reasoning": "哥伦比亚与葡萄牙末轮决头名,势均力敌。葡萄牙首战 1-1 平刚果(金)略受挫,哥伦比亚 3-1 屠乌兹后状态更好。C 罗、B·费尔南德斯 vs J·罗、L·迪亚斯均为顶级球员对话。双方都不会放弃但不愿在头名战中伤兵,1-1 是合理结果。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537408": {
+    "homeScore": 2, "awayScore": 1,
+    "homeWinProb": 0.46, "drawProb": 0.26, "awayWinProb": 0.28,
+    "confidence": 0.52,
+    "reasoning": "刚果(金)1 分排次席,本场需取胜以保证出线第二或最佳第三。乌兹别克斯坦 0 分已基本被淘汰但球员仍想拿下首胜。刚果(金)整体身体素质和欧洲联赛球员密度更高,巴卡约科、姆韦帕的进攻能力是关键。乌兹技术不差,可能进 1 球。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+
+  "m_537401": {
+    "homeScore": 0, "awayScore": 3,
+    "homeWinProb": 0.06, "drawProb": 0.14, "awayWinProb": 0.80,
+    "confidence": 0.78,
+    "reasoning": "阿根廷 6 分锁定 J 组头名+净胜球 +5,本场轮换实力仍碾压约旦。梅西可能首发 60 分钟为淘汰赛热身,劳塔罗、阿尔瓦雷斯轮替仍能进球。约旦 0 分基本被淘汰,近年没有击败传统强队经验。市场 78% 客胜对应大屠杀预期。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
+  },
+  "m_537402": {
+    "homeScore": 1, "awayScore": 2,
+    "homeWinProb": 0.28, "drawProb": 0.30, "awayWinProb": 0.42,
+    "confidence": 0.55,
+    "reasoning": "奥地利 3 分排次席,需取分锁定出线第二。阿尔及利亚若第二场还输则末轮为荣誉而战。奥地利的阿瑙托维奇+扎比策尔+巴姆加特纳的中前场组织对体能下降期的阿尔及利亚仍有威胁。预计奥地利凭借大赛经验拿下取胜。",
+    "generatedAt": "2026-06-23T00:00:00Z", "generatedBy": "claude-opus-4-7"
   }
 }
